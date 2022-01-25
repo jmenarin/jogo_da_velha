@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
                   for (int i = 0; i < 9; i++) {
                     colorFundo[i] = Colors.grey;
                     textFundo[i] = "";
-                    jogador = "X";
+                    jogador = "X  ";
                     proximoJogador = "É a vez do jogador ";
                     ganhador = false;
                     count = 0;
@@ -51,10 +51,9 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Column(children: [
         Expanded(
-          flex: 8,
+          flex: 5,
           child: GridView.builder(
-              padding: const EdgeInsets.only(
-                  left: 70, right: 70, bottom: 0, top: 20),
+              padding: const EdgeInsets.only(left: 10, right: 10, top: 10),
               itemCount: 9,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 3,
